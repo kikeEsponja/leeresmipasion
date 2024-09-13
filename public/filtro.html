@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Books</title>
+    <!-- Aquí puedes incluir tus estilos CSS si los tienes -->
+</head>
+<body>
+    <button onclick="goBack()">volver</button>
+    <h1>Libros filtrados por tema</h1>
+    <div id="filteredBooks">
+        <!-- Aquí se mostrarán los libros filtrados -->
+    </div>
+
+    <script>
+        async function displayFilteredBooks() {
+            try {
+                const filteredSubject = localStorage.getItem('filteredSubject');
+                const response = await fetch(`https://leeresmipasion.com:3001/api/books?subject=${filteredSubject}`);
+                const data = await response.json();
+
+                const filteredBooksElement = document.getElementById('filteredBooks');
+                filteredBooksElement.innerHTML = data.map(book => `
+                    <div style="width:30%;">
+                        <h2>${book.title}</h2>
+                        <p>Autor: ${book.author}</p>
+                        <img src="${book.cover}" style="width:100px;" onclick="searchBooks2()">
+                        <!-- Agrega más detalles del libro si es necesario -->
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Error fetching filtered books:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', displayFilteredBooks);
+    </script>
+    <script src="../routes/funciones.js"></script>
+    <script src="../routes/home.js"></script>
+</body>
+</html>

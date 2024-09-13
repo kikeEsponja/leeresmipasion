@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="fortrainevolution.com">
+        <meta name="description" content="para guardar libros de forma manual en la base de datos">
+        <link rel="shortcut icon" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./estilos.css" type="text/css">
+        <title>guardar libros</title>
+    </head>
+<body>
+
+    <center>
+        <div>
+            <h1>Formulario</h1>
+            <form id="bookForm">
+                <label for="title">Título</label>
+                <input class="btn btn-outline-info" type="text" id="title" name="title" required><br>
+        
+                <label for="author">Autor</label>
+                <input class="btn btn-outline-info" type="text" id="author" name="author" required><br>
+        
+                <label for="subject">Tema</label>
+                <input class="btn btn-outline-info" type="text" id="subject" name="subject" required><br>
+        
+                <label for="description">Descripción</label>
+                <textarea class="btn btn-outline-info" id="description" name="description" required></textarea><br>
+        
+                <button class="btn btn-success" onclick="processBooks()" type="submit">subir libro</button>
+            </form>
+        </div>
+
+    </center>
+
+    <script>
+        function processBooks(event){
+            event.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const author = document.getElementById('author').value;
+            const subject = document.getElementById('subject').value;
+            const description = document.getElementById('description').value;
+
+            const metadata = [{
+                "title": title,
+                "author": author,
+                "date": {
+                    "$date": new Date().toISOString()
+                },
+                "description": description,
+                "subject": subject,
+                "cover": `./src/books/${author}/${title}/cover.jpg`,
+                "urlpdf": `/src/books/${author}/${title}/${title}.pdf`
+            }];
+
+            const metadataJSON = JSON.stringify(metadata, null, 2);
+
+            const blob = new Blob([metadataJSON], { type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'metadata.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        document.getElementById('bookForm').addEventListener('submit', processBooks);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
