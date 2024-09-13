@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="fortrainevolution.com">
+        <meta name="description" content="sitio de lectura en línea">
+        <link rel="shortcut icon" href="./src/img/logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./public/leeresmipasion.css" type="text/css">
+        <title>Leer es mi pasión</title>
+    </head>
+
+<body>
+    <a href="/index.html" class="logoLink">
+        <img src="./src/img/logo.png" class="logo">
+    </a>
+    <nav>
+        <button class="custom-dropdown desaparece-tlf">Categorías
+            <ul class="menu-lista" id="bookDetails"></ul>
+        </button>
+
+        <div class="tituloPrincipal">
+            <h1>LEER ES MI PASIÓN</h1>
+            <div class="lang">
+                <a class="nav-link" href="../index.html"><img src="../src/img/flag-spain.svg"></a>
+                <a class="nav-link" href="./public/indexen.html"><img src="../src/img/flag-usa.svg"></a>
+                <!--<div class="chat">
+                    <iframe src="https://leeresmipasion.com:3200/" width="25%" height="250px" id="embed-minichat" class="minichat"></iframe>
+                </div>-->
+            </div>
+        </div>
+
+        <button class="custom-dropdown desaparece-tlf">Menú
+            <ul class="menu-lista">
+                <a href="./public/login.html"><li>Iniciar sesión</li></a>
+                <a href="./public/registro.html"><li>Registro</li></a>
+                <li>Mis lecturas</li>
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal2">Contacto</li>
+                <a href="./public/guiadeuso.html"><li>Guía de uso</li></a>
+                <a href="./public/preguntasfrecuentes.html"><li>Preguntas frecuentes</li></a>
+                <li><a href="./public/terminosCondiciones.html" class="terminosLink">Terminos y condiciones</a></li>
+                <li><a href="./public/politicas.html" class="terminosLink">Politicas de Privacidad</a></li>
+            </ul>
+        </button>
+
+        <div class="botones-tlf">
+            <button class="custom-dropdown">Categorías
+                <ul class="menu-lista" id="bookDetails-tlf"></ul>
+            </button>
+    
+            <div class="tituloPrincipal desaparece-tlf">
+                <h1>LEER ES MI PASIÓN</h1>
+                <div class="lang">
+                    <a class="nav-link" href="#"><img src="../src/img/flag-spain.svg"></a>
+                    <a class="nav-link" href="../public/indexen.html"><img src="../src/img/flag-usa.svg"></a>
+                </div>
+            </div>
+            
+            <button class="custom-dropdown">Menú
+                <ul class="menu-lista">
+                    <a href="./public/login.html"><li>Iniciar sesin</li></a>
+                    <a href="./public/registro.html"><li>Registro</li></a>
+                    <li>Mis lecturas</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal2">Contacto</li>
+                    <a href="./public/guiadeuso.html"><li>Guía de uso</li></a>
+                    <a href="./public/preguntasfrecuentes.html"><li>Preguntas frecuentes</li></a>
+                    <li><a href="./public/terminosCondiciones.html" class="terminosLink">Terminos y condiciones</a></li>
+                    <li><a href="./public/politicas.html" class="terminosLink">Politicas de Privacidad</a></li>
+                </ul>
+            </button>
+        </div>
+    </nav>
+    <br>
+
+    <!-- Modal
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-warning">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Estimado lector</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+                Este sitio se mantiene en línea para ofrecer el mejor servicio gracias a la publicidad, estamos contínuamente trabajando para mejorar la experiencia, muchas gracias por su comprensión
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>-->
+
+    <!-- Modal CONTACTO -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Contacto</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>teléfono</li>
+                    <li>correo electrónico</li>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                    <li>youtube</li>
+                    <li>twitter</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <main>
+        <!--<div>
+            <ul id="messages"></ul>
+            <form id="form" action="" class="chat">
+                <input id="input" autocomplete="off" /><button>Enviar</button>
+            </form>
+        </div>-->
+
+        <!--<div class="publicidad">
+            <!--<div data-mndazid="97890b61-f48e-49b4-8d4b-f0bf72729a9f"></div>
+            <br>
+            <div data-mndazid="97890b61-f48e-49b4-8d4b-f0bf72729a9f"></div>
+            <br>
+            <div data-mndazid="97890b61-f48e-49b4-8d4b-f0bf72729a9f"></div>
+            <div data-mndbanid="5dd746a5-2b1f-4825-9e74-9c8f152bd19d"></div>
+            <br>
+            <div data-mndbanid="450efe90-6aaf-4122-adca-e41f73bad02b"></div>
+            <br>
+            <div data-mndbanid="3be625bb-69ba-4a73-b1ac-feadc5b7dd2c"></div>
+            <br>
+            <div data-mndbanid="0e4e1fba-6c8c-4b1b-92a2-f68fd8f9b92d"></div>
+        </div>-->
+        <section class="seccion-uno">
+            <div>
+                <h3>LIBROS ONLINE GRATIS</h3>
+                <input type="text" id="searchInput" class="btn btn-outline-light" placeholder="buscar">
+                <button onclick="searchBooks()" class="btn btn-success">Buscar</button>
+                <div id="booksContainer" class="booksContainer">
+                    <img src="./src/img/tabla.svg" class="tabla-busqueda" id="tabla-busqueda"> 
+                </div>
+
+                <section class="seccion-uno">
+                    <div>
+                        <div class="inputSearchContainer">
+                            <h3><span class="inputSearch"></span></h3>
+                        </div>
+                        <div id="carouselSearchContainer"></div>
+                    </div>
+                </section>
+               
+                <div class="loader-container" id="loader">
+                    <div class="loader book">
+                        <figure class="page"></figure>
+                        <figure class="page"></figure>
+                        <figure class="page"></figure>
+                    </div> 
+                    <h1 class="loader-text">Cargando...</h1>
+                </div>
+                
+                <div class="recien-agregados">
+                    <h3>Recién agregados <i class="bi bi-newspaper"></i></h3>
+                    <!--<button class="btn btn-danger">Ver todos</button>-->
+                </div>
+                <div id="carouselRepisa1" class="carousel">
+                    <div id="carouselImagesRepisa1"></div>
+                    <button class="bi bi-caret-left" id="prevRepisa1"></button>
+                    <button class="bi bi-caret-right" id="nextRepisa1"></button>
+                </div>
+                <img src="./src/img/tabla.svg" class="tabla">
+            </div>
+        </section>
+
+        <section class="seccion-uno">
+            <div>
+                <div class="recien-agregados">
+                    <h3>Recomendados <i class="bi bi-lightbulb"></i></h3>
+                </div>
+                <div id="carouselRepisa2" class="carousel">
+                    <div id="carouselImagesRepisa2"></div>
+                	<h2 class="advert-tlf">SOLO VISIBLE EN VERSIÓN WEB</h2>
+                    <button class="bi bi-caret-left" id="prevRepisa2"></button>
+                    <button class="bi bi-caret-right" id="nextRepisa2"></button>
+                </div>
+                <img src="./src/img/tabla.svg" class="tabla">
+            </div>
+        </section>
+
+        <section class="seccion-uno">
+            <div>
+                <div class="recien-agregados">
+                    <h3>Más ledos <i class="bi bi-balloon-heart"></i></h3>
+                </div>
+                <div id="carouselRepisa3" class="carousel">
+                    <div id="carouselImagesRepisa3"></div>
+                	<h2 class="advert-tlf">SOLO VISIBLE EN VERSIÓN WEB</h2>
+                    <button class="bi bi-caret-left" id="prevRepisa3"></button>
+                    <button class="bi bi-caret-right" id="nextRepisa3"></button>
+                </div>
+                <img src="../src/img/tabla.svg" class="tabla">
+            </div>
+        </section>
+
+        <section class="seccion-uno">
+            <div>
+                <div class="recien-agregados">
+                    <h3 class="text-danger">Próximamente<i class="bi bi-balloon-heart"></i></h3>
+                </div>
+                <div id="carouselRepisa4" class="carousel">
+                    <div id="carouselImagesRepisa4"></div>
+                    <button class="bi bi-caret-left" id="prevRepisa4"></button>
+                    <button class="bi bi-caret-right" id="nextRepisa4"></button>
+                </div>
+                <img src="../src/img/tabla.svg" class="tabla">
+            </div>
+        </section>
+
+        <footer>
+            <ul>
+                <li>leer es mi pasión</li>
+                <li data-bs-toggle="modal" data-bs-target="#exampleModal2" style="cursor: pointer; color:#6b93ff;">contacto</li>
+                <li><a href="./public/terminosCondiciones.html" class="terminosLink">Trminos y condiciones</a></li>
+                <li><a href="./public/politicas.html" class="terminosLink">Políticas de privacidad</a></li>
+                <!--<button class="btn btn-warning" onclick="goBack()">Volver</button>-->
+            </ul>
+        </footer>
+    </main>
+    
+        <!--<script src="/socket.io/socket.io.js"></script>-->
+        <!--<script>
+            //const socket = io();
+            const form = document.getElementById('form');
+            const input = document.getElementById('input');
+            const messages = document.getElementById('messages');
+            
+            form.addEventListener('submit', (e)=>{
+                e.preventDefault();
+                if(input.value.trim()){
+                    socket.emit('chat message', input.value);
+                    input.value = '';
+                }
+            });
+            
+            socket.on('chat message', (msg) => {
+                console.log('mensaje recibido: ', msg);
+                const item = document.createElement('li');
+                item.textContent = msg;
+                item.style.color= #fff;
+                messages.appendChild(item);
+                window.scrollTo(0, document.body.scrollHeight);
+            });
+        </script>-->
+        <script>
+            async function displayBookDetails() {
+            	try {
+                	const response = await fetch('https://leeresmipasion.com:1024/api/books');
+                	const data = await response.json();
+
+	                const subjects = data.map(book => book.subject);
+    	            const uniqueSubjects = [...new Set(subjects)]; // Elimina duplicados
+	
+    	            const detailsElement = document.getElementById('bookDetails');
+        	    	const detailsElementTlf = document.getElementById('bookDetails-tlf');
+            
+            	    detailsElement.innerHTML = uniqueSubjects.map(subject => `<li><a href="#" onclick="filterBooks('${subject}')">${subject}</a></li>`).join('');
+                	detailsElementTlf.innerHTML = uniqueSubjects.map(subject => `<li><a href="#" onclick="filterBooks('${subject}')">${subject}</a></li>`).join('');
+            	} 
+            	catch (error) {
+                	console.error('Error fetching book subjects:', error);
+            	}
+        	}
+
+            async function filterBooks(subject) {
+            const url = `https://leeresmipasion.com:1025/api/search?query=${encodeURIComponent(subject)}`;
+
+            try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const books = await response.json();
+
+            const carouselContainer = document.getElementById('carouselSearchContainer');
+            carouselContainer.innerHTML = ''; // Limpia el contenedor del carrusel antes de crear uno nuevo
+
+            if (books.length === 0) {
+                console.log('No hay libros en esta categora');
+            } else {
+                const carouselId = 'carouselSearch'; // ID del carrusel de bsqueda
+                const carouselDiv = document.createElement('div');
+                carouselDiv.setAttribute('id', carouselId);
+                carouselDiv.setAttribute('class', 'carousel');
+
+                const carouselImagesDiv = document.createElement('div');
+                carouselImagesDiv.setAttribute('id', 'carouselImagesSearch');
+                carouselDiv.appendChild(carouselImagesDiv);
+
+                const prevButton = document.createElement('button');
+                prevButton.setAttribute('class', 'bi bi-caret-left');
+                prevButton.setAttribute('id', 'prevSearch');
+                carouselDiv.appendChild(prevButton);
+
+                const nextButton = document.createElement('button');
+                nextButton.setAttribute('class', 'bi bi-caret-right');
+                nextButton.setAttribute('id', 'nextSearch');
+                carouselDiv.appendChild(nextButton);
+
+                carouselContainer.appendChild(carouselDiv);
+
+                const carouselSearch = new BookCarousel('carouselImagesSearch', 4);
+                carouselSearch.books = books; // Establece los libros para el carrusel
+                carouselSearch.updateCarousel();
+
+                document.getElementById('prevSearch').addEventListener('click', () => carouselSearch.moveSlide(-1));
+                document.getElementById('nextSearch').addEventListener('click', () => carouselSearch.moveSlide(1));
+            }
+
+                const tablaImg = document.createElement('img');
+                tablaImg.setAttribute('src', './src/img/tabla.svg');
+                tablaImg.setAttribute('class', 'tabla');
+                carouselContainer.appendChild(tablaImg);
+            } catch (error) {
+                console.error('Error al buscar libros:', error);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', displayBookDetails);
+    </script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-7CQBRPVPQE"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+	  	gtag('js', new Date());
+
+  		gtag('config', 'G-7CQBRPVPQE');
+	</script>
+    <script src="./routes/home.js"></script>
+    <script src="./routes/funciones.js"></script>
+    <script async src="https://ss.mndsrv.com/banner.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

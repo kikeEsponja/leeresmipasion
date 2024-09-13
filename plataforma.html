@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="fortrainevolution.com">
+        <meta name="description" content="sitio de lectura en línea">
+        <link rel="shortcut icon" href="./src/img/logo.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/plantillas.css" type="text/css">
+        <title>Proyecto-plantillas</title>
+    </head>
+
+<body>
+    <!--------------------------------- CABECERA ------------------------------------------------->
+    <header>
+        <div class="logo">
+            <img src="../src/img/logo.svg" alt="logo">
+        </div>
+        <nav class="col-6">
+            <span class="bi bi-list"></span>
+            <ul>
+                <li>productos</li>
+                <li>quienes somos</li>
+                <li>por qué nuestros productos</li>
+                <li>ayuda</li>
+            </ul>
+        </nav>
+        <div class="text-center contenedor-cerrar">
+            <button id="boton-cerrar" onclick="cerrarSesion()" class="boton-cerrar">cerrar sesión</button>
+            <div id="botones" class="botones">
+              <button id="si" class="btn btn-danger">Sí</button>
+              <button id="no" class="btn btn-primary">No</button>
+            </div>
+        </div>
+    </header>
+    <!-------------------------------------------------------------------------------------------->
+    <!--------------------------------- PRODUCTOS ------------------------------------------------>
+    <section>
+        <div class="texto-productos">
+            <div>
+                <h2>tu presencia web, a tu medida</h2>
+                <h2>páginas prediseñadas, resultados personalizados</h2>
+            </div>
+            <div>
+                <p>"potenciar a los diseñadores, reducir los tiempos de desarrollo"</p>
+            </div>
+        </div>
+        <div class="text-start">
+            <p>Bienvenido: <span id="nombre"></span></p>
+            <p>Hoy es: <span id="fecha"></span></p>
+        </div>
+        <br>
+        <div class="contenedor-productos">
+            <div class="productos">
+                <img src="../src/img/frame1.png" alt="producto">
+                <p>ventas online, retail, e-commerce</p>
+            </div>
+            <div class="productos">
+                <img src="../src/img/frame2.png" alt="producto">
+                <p>tu empresa, tu marca, tu presencia en la red</p>
+            </div>
+            <div class="productos">
+                <img src="../src/img/frame3.png" alt="producto">
+                <p>toma el control, métricas, reportes, control</p>
+            </div>
+            <div class="productos">
+                <img src="../src/img/frame4.png" alt="producto">
+                <p>gran empresa? emprendedor? hay para todos</p>
+            </div>
+            <div class="productos">
+                <img src="../src/img/frame5.png" alt="producto">
+                <p>e-learning, videos, explota tu conocimiento</p>
+            </div>
+            <div class="productos">
+                <img src="../src/img/frame6.png" alt="producto">
+                <p>agenda tu próximo encuentro</p>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------->
+    <!--------------------------------- TESTIMONIOS ---------------------------------------------->
+    <section>
+        <h2 class="text-center">Nuestros clientes, sus testimonios</h2>
+        <div class="testimonio text-start">
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+            <div>
+                <img src="../src/img/face.png" alt="">
+                <h5>nombre apellido</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione amet minima porro error libero repellat, doloremque soluta adipisci odit, ex veritatis fuga! Est voluptas praesentium quisquam accusantium officia dicta inventore.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-------------------------------------------------------------------------------------------->
+    <!--------------------------------- TECNOLOGÍAS ---------------------------------------------->
+    <section class="fondo-tecnologias">
+        <div class="contenedor-tecnologias">
+            <aside>
+                <h3 class="codigo-fortrain"><i class="bi bi-code-slash"></i> Código Fortrain</h3>
+                <h5 class="texto-codigo-fortrain">De nuestro lado nos encargamos de la adaptabilidad de las funcionalidades que se adapten a tu necesidad</h5>
+                <p class="text-start">"Nuestros desarrolladores altamente capacitados se encargan del código. Tú solo elige y personaliza a tu gusto. FortrainEvolution te ofrece la libertad de trabajar como desees."</p>
+            </aside>
+            <div class="row-4">
+                <div class="tecnologias">
+                    <img src="../src/img/vector-javascript.png" alt="">
+                    <p>javaScript</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-apple.png" alt="">
+                    <p>Apple</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-macOs.png" alt="">
+                    <p>macOs</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-android.png" alt="">
+                    <p>Android</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-windows.png" alt="">
+                    <p>Windows</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-flutter.png" alt="">
+                    <p>Flutter</p>
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="tecnologias">
+                    <img src="../src/img/vector-react.png" alt="">
+                    <p>React</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-reactnative.png" alt="">
+                    <p>React Native</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-rust.png" alt="">
+                    <p>Rust</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-c.png" alt="">
+                    <p>C ++</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-defold.png" alt="">
+                    <p>Defold</p>
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="tecnologias">
+                    <img src="../src/img/vector-tizen.png" alt="">
+                    <p>Tizen</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-unity.png" alt="">
+                    <p>Unity</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-unreal.png" alt="">
+                    <p>Unreal</p>
+                </div>
+                <div class="tecnologias">
+                    <img src="../src/img/vector-framer.png" alt="">
+                    <p>Framer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------------------->
+    <!----------------------------- FOOTER ------------------------------------------------------->
+    <footer>
+        <hr>
+        <div>
+            <div class="footer-list">
+                <ul>
+                    <li class="underline">product</li>
+                    <li>editor</li>
+                    <li>runtimes</li>
+                    <li>renderer</li>
+                    <li>changelog</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="underline">Community</li>
+                    <li>Rive community</li>
+                    <li>Discord</li>
+                    <li>Get Support</li>
+                    <li>Experts</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="underline">Learn</li>
+                    <li>Documentation</li>
+                    <li>Blog</li>
+                    <li>Features</li>
+                    <li>-</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="underline">Company</li>
+                    <li>Careers</li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                    <li>-</li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <ul>
+                    <li class="underline">Use Cases</li>
+                    <li>Game UI</li>
+                    <li>Runtime</li>
+                    <li>Product design</li>
+                    <li>Rive vs lottle</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-final">
+            <div>
+                <h2>fortrain evolution</h2>
+                <p class="text-start">@ 2024 Fortrain Evolution INC Todos los derechos reservados</p>
+                <p class="text-start">all trademarks, logos and brand names are property of their respective owners</p>
+            </div>
+            <div class="redes">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-github"></i>
+                <i class="bi bi-facebook"></i>
+            </div>
+        </div>
+    </footer>
+    <!-------------------------------------------------------------------------------------------->
+    <script src="../js/plataforma.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

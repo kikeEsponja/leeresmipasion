@@ -1,0 +1,3 @@
+comando para crear enlace simbólico
+
+ln -s /home/leeresmipasion.com/public_html/src/books /home/leeresmipasion.com/qa/src/books
